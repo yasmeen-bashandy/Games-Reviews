@@ -4,12 +4,14 @@
    --seconde-color: #32383e;
    --color-text: #fff;
    --btn-main-color: #272729;
+   --bs-badge-color: #fff;
 }
 [data-theme="light"] {
    --main-color: #eeeeee;
-   --seconde-color: #909396;
+   --seconde-color: #010202;
    --color-text: #000;
    --btn-main-color: #414550;
+   --bs-badge-color: #000;
 }
 
 
@@ -188,5 +190,9 @@ width: 45px;
    }
 }
 /***** End Loader *****/
+.badge{
+   color:var(--color-text) ;
+   
+}
 
  
