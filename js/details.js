@@ -1,4 +1,6 @@
 //  =============> Global ===============>
+const loading=document.querySelector(".loading")
+
 let containerDetails = {};
 
 // =============> When Start ===============>
@@ -41,6 +43,7 @@ mode.addEventListener("click", function (e) {
 // =============>function ===============>
 
 (async function () {
+   loading.classList.remove("d-none"); //show loading
    const options = {
       method: "GET",
       headers: {
@@ -53,7 +56,9 @@ mode.addEventListener("click", function (e) {
    const responseData = await api.json();
 
    containerDetails = responseData;
+   loading.classList.add("d-none"); //show loading
    displayData();
+   
 
    console.log(responseData);
 })();
