@@ -96,6 +96,7 @@ nav .nav-link{
    transition: color 0.5s;
    font-size: .875em;
    transition: color 0.5s;
+   overflow: hidden;
 
 }
 nav a.active{
@@ -113,6 +114,11 @@ nav .nav-link:hover{
 
 .img-log-nav{
 width: 45px;
+}
+@media screen and (max-width:768px) {
+.navbar{
+    width: 100% !important;
+}
 }
 /***** nav end ****/
 
